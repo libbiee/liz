@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legenda Berasal dari Papua Barat</title>
+    <style>
+        /* Light mode styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fceef5;
+            color: #333;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffb3ba;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffdfba;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #555;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ffb3ba;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        button {
+            margin: 20px;
+            background-color: #ffb3ba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #ffdfba;
+        }
+
+        footer {
+            background-color: #bae1ff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+			h2 {
+			padding: 20px;
+			text-align: center;}
+
+    </style>
+    <script>
+        // Function to toggle dark mode on and off
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function showMessage() {
+            alert("Hello! Welcome to the Pastel Themed Website.");
+        }
+
+        function displayCurrentYear() {
+            var date = new Date();
+            document.getElementById("year").innerHTML = date.getFullYear();
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Proyek P5 Trikora</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+<button onclick="showMessage()">Click Me</button>
+    <button onclick="toggleDarkMode()">Toggle Light/Dark Mode</button>
+    <h2>About Papua Barat (Irian)</h2>
+    <p>Papua adalah sebuah provinsi di Indonesia yang terletak di pulau Nugini bagian barat atau west New Guinea. Papua juga sering disebut sebagai Papua Barat karena Papua bisa merujuk kepada seluruh pulau Nugini termasuk belahan timur negara tetangga, east New Guinea atau Papua Nugini. Papua Barat adalah sebutan yang lebih disukai para nasionalis yang ingin memisahkan diri dari Indonesia dan membentuk negara sendiri.</p>
+
+<p>Provinsi ini dulu dikenal dengan panggilan Irian Barat sejak tahun 1969 hingga 1973, namanya kemudian diganti menjadi Irian Jaya oleh Soeharto pada saat meresmikan tambang tembaga dan emas Freeport, nama yang tetap digunakan secara resmi hingga tahun 2002. Nama provinsi ini diganti menjadi Papua sesuai UU No 21/2001 Otonomi Khusus Papua. Pada masa era kolonial Belanda, daerah ini disebut Nugini Belanda (Dutch New Guinea).</p>
+
+<p>Asal kata Irian adalah Ikut Republik Indonesia Anti-Netherland. Kata Papua sendiri berasal dari bahasa melayu yang berarti rambut keriting, sebuah gambaran yang mengacu pada penampilan fisik suku-suku asli.</p>
+
+<p>Pada tahun 2004, disertai oleh berbagai protes, Papua dibagi menjadi dua provinsi oleh pemerintah Indonesia bagian timur tetap memakai nama Papua sedangkan bagian baratnya menjadi Irian Jaya Barat yang sekarang menjadi Provinsi Papua Barat.</p>
+
+<a href="https://papua.go.id/view-detail-page-254/Sekilas-Papua-.html" target="_blank" class="source-link">Sumber Artikel</a>
+</section>
+
+
+
+<footer>
+    <p>&copy; 2024 Simple Website</p>
+</footer>
+
+</body>
+</html>
