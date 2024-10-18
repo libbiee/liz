@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legenda Berasal dari Papua Barat</title>
+    <style>
+        /* Light mode styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fceef5;
+            color: #333;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffb3ba;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffdfba;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #555;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ffb3ba;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            margin: 30px;
+            background-color: #ffb3ba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+				
+				
+        }
+
+        button:hover {
+            background-color: #ffdfba;
+        }
+
+			h2 {
+			padding: 20px;
+			text-align: center;}
+			
+			section p {
+            text-align: justify;  /* Justify paragraphs in the section */
+        }
+
+        /* Footer styling with centered paragraph */
+        footer {
+            background-color: #bae1ff;
+            padding: 20px;
+            text-align: center;  /* Center the footer text */
+            color: white;
+            margin-top: 40px;
+        }
+
+
+        /* Posters grid layout */
+        .poster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            justify-items: center;
+            padding: 20px;
+        }
+
+        /* Each poster box */
+        .poster-box {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Poster image */
+        .poster-box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Caption styling */
+        .poster-box p {
+            margin-top: 10px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #bae1ff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Responsive adjustments for smaller screens */
+        @media (max-width: 600px) {
+            .poster-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .poster-box img {
+                width: 100%;
+            }
+        }
+
+body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        body.dark-mode .poster-box {
+            background-color: #555; /* Dark background for the poster box */
+        }
+
+        body.dark-mode .poster-box p {
+            color: #fff; /* White caption color in dark mode */
+        }
+    </style>
+    <script>
+        // Function to toggle dark mode on and off
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function showMessage() {
+            alert("Halo! Kami, Trikora, akan menunjukkan poster kami!");
+        }
+
+        function displayCurrentYear() {
+            var date = new Date();
+            document.getElementById("year").innerHTML = date.getFullYear();
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Trikora's Project</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Videos</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Us</a>
+</nav>
+
+<section>
+<button onclick="showMessage()">Click Me</button>
+    <button onclick="toggleDarkMode()">Light/Dark Mode</button>
+    <h2>Poster Kami</h2>
+    <div class="poster-grid">
+        <!-- Poster 1 -->
+        <div class="poster-box">
+            <img src="path-to-poster1.jpg">
+            <p>Papua's Ancestral Tale:</p>
+<p>Asal-Usul Irian</p>
+        </div>
+</section>
+
+<footer>
+    <p>thank you for visiting!</p>
+</footer>
+
+</body>
+</html>

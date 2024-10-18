@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legenda Berasal dari Papua Barat</title>
+    <style>
+        /* Light mode styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fceef5;
+            color: #333;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffb3ba;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffdfba;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #555;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ffb3ba;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            margin: 30px;
+            background-color: #ffb3ba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+				
+				
+        }
+
+        button:hover {
+            background-color: #ffdfba;
+        }
+
+			h2 {
+			padding: 20px;
+			text-align: center;}
+			
+			section p {
+            text-align: justify;  /* Justify paragraphs in the section */
+        }
+
+        /* Footer styling with centered paragraph */
+        footer {
+            background-color: #bae1ff;
+            padding: 20px;
+            text-align: center;  /* Center the footer text */
+            color: white;
+            margin-top: 40px;
+        }
+
+
+			
+    </style>
+    <script>
+        // Function to toggle dark mode on and off
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function showMessage() {
+            alert("Halo! Kami, Trikora, akan menunjukkan video tentang Asal-Usul Irian!");
+        }
+
+        function displayCurrentYear() {
+            var date = new Date();
+            document.getElementById("year").innerHTML = date.getFullYear();
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Trikora's Project</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Videos</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Us</a>
+</nav>
+
+<section>
+<button onclick="showMessage()">Click Me</button>
+    <button onclick="toggleDarkMode()"> Light/Dark Mode</button>
+    <h2>Video YouTube tentang Legenda Asal-Usul Irian</h2>
+    <p>Beberapa video YouTube tentang legenda Irian yang dapat ditonton:</p>
+
+    <!-- YouTube Video 1 -->
+    <iframe src="https://youtube.com/embed/dRiUeERsJUA" 
+            title="YouTube video 1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <!-- YouTube Video 2 -->
+    <iframe src="https://www.youtube.com/embed/yuWZmYPJ8Lw" 
+            title="YouTube video 2" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+
+    <!-- YouTube Video 3 -->
+    <iframe src="https://www.youtube.com/embed/JLFuY8W315w" 
+            title="YouTube video 3" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+</section>
+
+
+
+<footer>
+    <p>thank you for visiting!</p>
+</footer>
+
+</body>
+</html>

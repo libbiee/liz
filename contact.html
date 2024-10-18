@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legenda Berasal dari Papua Barat</title>
+    <style>
+        /* Light mode styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fceef5;
+            color: #333;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        /* Dark mode styles */
+        body.dark-mode {
+            background-color: #333;
+            color: #fff;
+        }
+
+        header {
+            background-color: #ffb3ba;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffdfba;
+        }
+
+        nav a {
+            padding: 14px 20px;
+            text-decoration: none;
+            color: #555;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #ffb3ba;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+
+        button {
+            margin: 30px;
+            background-color: #ffb3ba;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+				
+				
+        }
+
+        button:hover {
+            background-color: #ffdfba;
+        }
+
+        footer {
+            background-color: #bae1ff;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+			h2 {
+			padding: 20px;
+			text-align: center;}
+
+.team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+            gap: 20px;
+            justify-items: center;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            text-align: center;
+        }
+
+        .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .team-member img:hover {
+            transform: scale(1.1);
+        }
+
+        .team-member p {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #bae1ff;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+        }
+
+        /* Media Query for Smaller Screens (Mobile) */
+        @media (max-width: 600px) {
+            .team-grid {
+                grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns on mobile */
+            }
+
+            .team-member img {
+                width: 120px; /* Slightly smaller images on mobile */
+                height: 120px;
+            }
+        }
+
+        /* Media Query for Very Small Screens */
+        @media (max-width: 400px) {
+            .team-grid {
+                grid-template-columns: 1fr; /* Single column on very small screens */
+            }
+
+            .team-member img {
+                width: 100px; /* Even smaller images for tiny screens */
+                height: 100px;
+            }
+        }
+
+/* Styling the hyperlinks */
+        a {
+            color: #FFB6C1; /* Pastel pink color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Add underline on hover */
+            color: #FF91A4; /* Slightly darker pastel pink on hover */
+        }
+
+    </style>
+    <script>
+        // Function to toggle dark mode on and off
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+
+        function showMessage() {
+            alert("Halo! Kami, Trikora, akan memperkenalkan diri kami!");
+        }
+
+        function displayCurrentYear() {
+            var date = new Date();
+            document.getElementById("year").innerHTML = date.getFullYear();
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Trikora's Project</h1>
+</header>
+
+<nav>
+<a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Videos</a>
+    <a href="works.html">Works</a>
+    <a href="contact.html">Us</a>
+</nav>
+
+<section>
+<button onclick="showMessage()">Click Me</button>
+    <button onclick="toggleDarkMode()"> Light/Dark Mode</button>
+    <h2> Group Members</h2>
+    <div class="team-grid">
+        <!-- Team Member 1 -->
+        <div class="team-member">
+            <a href="https://www.instagram.com/alfinelwij?igsh=MTBub3BkaHVzb3A4cA==">
+                <img src="path-to-photo1.jpg" alt="Member 1 Photo">
+                <p>Alfin Tegar F. S.</p>
+            </a>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="team-member">
+            <a href="https://www.instagram.com/dakiitttt?igsh=MXZiOXlxMDI1d2IwMw==">
+                <img src="path-to-photo2.jpg" alt="Member 2 Photo">
+                <p>Dakit Pradipa Diantanta</p>
+            </a>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="team-member">
+            <a href="https://www.instagram.com/meydinaaaaaa_?igsh=MWY4eGE3c2M2ZGF3bA==">
+                <img src="path-to-photo3.jpg" alt="Member 3 Photo">
+                <p>Jelita Maydina K. P.</p>
+            </a>
+        </div>
+        <!-- Team Member 4 -->
+        <div class="team-member">
+            <a href="https://www.instagram.com/melldazaa_?igsh=dnJzMTFxNnN4bGNm">
+                <img src="path-to-photo4.jpg" alt="Member 4 Photo">
+                <p>Meldazza Septi R.</p>
+            </a>
+        </div>
+        <!-- Team Member 5 -->
+        <div class="team-member">
+            <a href="https://www.instagram.com/achooo.pdf?igsh=a2lwM2cycTVhOG9z">
+                <img src="path-to-photo5.jpg" alt="Member 5 Photo">
+                <p>Revaryan Daffa R. F.</p>
+            </a>
+        </div>
+        <!-- Team Member 6 -->
+        <div class="team-member">
+            <a href="https://www.instagram.com/steebtones?igsh=eXJ0Zmx4MXk4bjU5&utm_source=qr">
+                <img src="path-to-photo6.jpg" alt="Member 6 Photo">
+                <p>Ruth Thalita Sihombing</p>
+            </a>
+        </div>
+    </div>
+
+
+</section>
+
+
+
+<footer>
+    <p>thank you for visiting!</p>
+<p>created by: @steebtones on ig</p>
+</footer>
+
+</body>
+</html>
